@@ -6,6 +6,8 @@ gem 'nbasalaryscrape'
 gem 'nokogiri'
 gem 'json'
 gem 'httparty'
+gem 'eventmachine', github: "eventmachine/eventmachine"
+gem 'thin'
 
 gem 'tilt'
 gem 'haml'
