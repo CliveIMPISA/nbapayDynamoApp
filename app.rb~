@@ -30,11 +30,8 @@ class TeamPay < Sinatra::Base
       salary.each do |player|
         #data = money.gsub(/[$,]/, '$' => '', ',' => '')
         #data.to_i
-	       prepared << [player['Player'], (player['2014-15'].gsub(/[$,]/, '$' => '', ',' => '').to_i+player['2015-16'].gsub(/[$,]/, '$' => '', ',' => '').to_i+
-         player['2016-17'].gsub(/[$,]/, '$' => '', ',' => '').to_i+player['2017-18'].gsub(/[$,]/, '$' => '', ',' => '').to_i+
-         player['2018-19'].gsub(/[$,]/, '$' => '', ',' => '').to_i+player['2019-20'].gsub(/[$,]/, '$' => '', ',' => '').to_i)]
+	prepared <= [player['Player'], player['2015-16'].gsub(/[$,]/, '$' => '', ',' => '').to_i]
       end
-      puts prepared
      prepared
     end
     def current_page?(path = ' ')

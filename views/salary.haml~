@@ -1,6 +1,6 @@
 %head
   %script{:src => '//www.google.com/jsapi', :type => 'text/javascript'}
-  %script{:src => '/chartkick.js', :type => 'text/javascript'}
+  %script{:src => '//chartkick.js', :type => 'text/javascript'}
 .container
 
   %form{action: '/salary', method: 'get', id: 'team-form'}
@@ -45,9 +45,7 @@
       %p
 
       -if @salary
-        = pie_chart @piechart
-        = column_chart @piechart, stacked: true
-        %br
+        = pie_chart @piechart 
         %table{class: 'center', :border => '1'}
           %caption Team pay for #{@teamname}
           %tbody
