@@ -153,7 +153,7 @@ div.flash {
 
 .heading{
     color:red;
-    text-align:center;
+    text-align:left;
     padding:1px;
 		font-size:28px;
 		font-type:Geneva;
@@ -161,7 +161,7 @@ div.flash {
 }
 .objectives{
 	color:white;
-	text-align:center;
+	text-align:left;
 
 
 }
@@ -187,17 +187,16 @@ div.flash {
 		padding: 5em 0em;
 		color: rgba(0,0,0,0.5);
 
-
 	}
-	.image{
+.image{
 		align:center;
-	}
+}
 .links{
 	font-weight: 600;
 	text-transform: uppercase;
 	outline: 0;
 	color: #FFF;
-	text-align: center;
+	text-align: left;
 }
 
 
