@@ -63,6 +63,14 @@ class TeamPay < Sinatra::Base
     haml :salary
   end
 
+  get '/develop' do
+    haml :develop
+  end
+
+  get '/aboutsoa' do
+    haml :aboutsoa
+  end
+
   get '/salary/:teamname' do
     @teamname = params[:teamname]
     @salary = HTTParty.get api_url("#{@teamname}.json")
